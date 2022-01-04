@@ -1,0 +1,26 @@
+ALGORITHM sum of words 
+Var
+    s: string;
+    char, voy, mot, i: entier;
+ 
+BEGIN
+ 
+    char := 0;
+    voy := 0;
+    mot := 0;
+ 
+    Pour i := 1 à length(s) Faire
+        Case s[i] Faire
+            Valeur('a' Ou 'e' Ou 'i' Ou 'u' Ou 'o' Ou 'y') Faire
+                voy := voy + 1;
+            Valeur('_') Faire
+                mot := blanc + 1;
+            Sinon
+                char := cons + 1;
+        FinCase
+    FinPour
+ 
+END
+
+
+
